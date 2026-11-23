@@ -1,15 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bhoomika & Bhuvan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            background-size: 300% 300%;
+            animation: gradient 8s ease infinite;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 40px;
+            width: 90%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: white;
+            font-size: 38px;
+            margin: 15px 0;
+            text-shadow: 2px 3px 8px rgba(0,0,0,0.2);
+            animation: fadeIn 2s ease;
+        }
+
+        p {
+            color: white;
+            font-size: 17px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 13px 30px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #764ba2;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: #ffe0f0;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>
-        Hello bhoomika 
-    </h1>
-    <h1> Hello bhuvan</h1>
-    
+
+    <div class="container">
+        <h1>✨ Hello Bhoomika ✨</h1>
+        <h1>💜 Hello Bhuvan 💜</h1>
+
+        <p>Welcome to our beautiful little website!</p>
+
+        <button onclick="alert('Have a wonderful day! 😊')">
+            Click Me!
+        </button>
+    </div>
+
 </body>
 </html>
